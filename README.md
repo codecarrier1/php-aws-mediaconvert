@@ -2,7 +2,9 @@
 
 1. Set up AWS SDK access_key and secret_key.
    Create 'credentials' file in .aws directory in the root directory.
+	
    It should look like this.
+	
    [default]
    aws_access_key_id = 'XXXXX'
    aws_secret_access_key = 'XXXXX'
@@ -16,11 +18,17 @@
    - If you want to create separate buckets for your input files and output files, repeat steps 2 through step 5.
 
 3. Set up IAM permissions and copy the ARN of the role.
+
    https://docs.aws.amazon.com/mediaconvert/latest/ug/iam-role.html
+	
 4. Create a MediaConvert job queue and keep the Queue ARN of the queue.
+
    https://us-east-2.console.aws.amazon.com/mediaconvert/home?region=us-east-2#/queues/list
+	
 5. Create job settings json on this page by creating a new job and use the JSON in the code.
+
    https://us-east-2.console.aws.amazon.com/mediaconvert/home?region=us-east-2#/jobs/list
 
 Once you are done with everything above, replace these values with the newly created ones.
+
 $fileInput, $fileOutput, $roleArn, $queueArn
