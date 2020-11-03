@@ -6,7 +6,9 @@
    It should look like this.
 	
    [default]
+   
    aws_access_key_id = 'XXXXX'
+   
    aws_secret_access_key = 'XXXXX'
 2. Create S3 buckets for video storage.
 
